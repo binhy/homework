@@ -5,7 +5,7 @@
 '''
 
 import sys
-from collections import Counter
+from collections系列 import Counter
 
 #初始输入金额函数
 def budget():
