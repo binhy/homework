@@ -10,9 +10,36 @@
 回到10年前小游戏 README
 ===============
 
+程序介绍:
+程序还有很多功能可以实现，由于时间的关系，而且主要理解写一下类，就不深入的实现各种功能了。
+
+
 #详解：
 1.程序结构：
-略
+day6
+├── bin
+│   └── run.py  #程序主入口
+├── conf
+│   │  
+│   └── settings.py  #配置文件
+├── core            #主要程序逻辑
+│   ├── db_handler.py  #数据连接引擎
+│   ├── dump_or_load.py #用于从文件里加载或者存储角色数据
+│   ├── main.py #主逻辑交互程序
+│   ├── scene.py #场景模块，用于用户交互操作，打怪、购物、升级等
+│  
+├── db #角色和商品武器数据存储的地方
+│   ├── game_accounts #角色数据目录
+│   │   ├── hy.json
+│   │   └── yaobin.json
+│   ├── __init__.py
+│   └── weapon_shop   #商品武器数据目录
+│       └── weapon_list.json
+├── __init__.py
+├── readme.txt
+└── role    #角色模块目录
+    ├── __init__.py
+    └── role.py  #角色模块文件，用户初始化实例各种角色
 
 2.运行环境：Python3.0
 
