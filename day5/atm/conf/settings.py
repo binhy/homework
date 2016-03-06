@@ -5,19 +5,20 @@ import sys,os
 import logging
 
 BASE_DIR=os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-sys.path.append(BASE_DIR)
-print(BASE_DIR)
+#D:\Users\bin\PycharmProjects\s12\homework\day5\atm
+#sys.path.append(BASE_DIR)
+#print(BASE_DIR)
 #print(sys.path)
 
 
 DATABASE={
-    'engine':'file_stroge',
+    'engine':'file_storage',
     'name':'accounts',
-    'path':'%s/db' %BASE_DIR
+    'path':"%s/db" %BASE_DIR
 }
 
 
-LOG_LEVEL=logging.info  #日志水平
+LOG_LEVEL=logging.INFO  #日志水平
 #日志类型
 LOG_TYPES={
     'transaction': 'transactions.log',

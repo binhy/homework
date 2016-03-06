@@ -21,7 +21,7 @@ def make_transaction(log_obj,account_data,tran_type,amount,**kwargs):
 
         account_data['balance']=new_balance
         accounts.dump_account(account_data)
-        log_obj.info("账户:%s,动作:%s,交易类型:%s,金额:%s,利息:%s"%(account_data['id'],tran_type,amount,interest))
+        log_obj.info("账户:%s,交易类型:%s,金额:%s,利息:%s"%(account_data['id'],tran_type,amount,interest))
         return account_data
     else:
         print("\033[31;1m交易类型 [%s] 不存在!\033[0m" % tran_type)

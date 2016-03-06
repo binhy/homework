@@ -1,44 +1,9 @@
-#!/usr/bin/env python
-#coding=utf-8
+#!_*_coding:utf-8_*_
+#__author__:"Alex Li"
 
-# import sys,os
-# #print(sys.path)
-# sys.path.append(os.path.dirname(os.path.dirname(__file__)))
-# #print(sys.path)
-# import logging
-# from conf import settings
-#
-#
-#
-#
-# def logger(log_type):
-#     logger=logging.getLogger(log_type)
-#     logger.setLevel(settings.LOG_LEVEL)
-#
-#
-#     ch=logging.StreamHandler()
-#     ch.setLevel(settings.LOG_LEVEL)
-#
-#
-#     log_file="%s/log/%s"%(settings.BASE_DIR,settings.LOG_TYPES[log_type])
-#     fh=logging.FileHandler(log_file)
-#     fh.setLevel(settings.LOG_LEVEL)
-#
-#     formatter=logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
-#
-#
-#     ch.setFormatter(formatter)
-#     fh.setFormatter(formatter)
-#
-#     logger.addHandler(ch)
-#     logger.addFilter(fh)
-#
-#
-#     return logger
-#
-# #test=logger('access')
-
-
+'''
+handle all the logging works
+'''
 import sys,os
 #print(sys.path)
 sys.path.append(os.path.dirname(os.path.dirname(__file__)))
@@ -46,8 +11,8 @@ print(sys.path)
 import logging
 from conf import settings
 
-import logging
-from conf import settings
+
+
 
 def logger(log_type):
 
@@ -83,5 +48,12 @@ def logger(log_type):
     log.error('error message')
     log.critical('critical message')'''
 
-
-test=logger('access')
+#test=logger('access')
+# test=logger('transaction')
+#
+# test.info("info hahah")
+# test.debug("debug hahah")
+# test.warn("warn hahah")
+# test.error("error hahah")
+# test.critical("critical haha")
+#

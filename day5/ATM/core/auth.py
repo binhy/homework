@@ -26,7 +26,7 @@ def acc_login(user_data,log_obj):
 
 
 def acc_auth(account,password):
-    db_path=db_handler.db_handler(settins.DATABASE)
+    db_path=db_handler.db_handler(settings.DATABASE)
     account_file='%s/%s.json'%(db_path,account)
     print(account_file)
     if os.path.isfile(account_file):
@@ -35,7 +35,7 @@ def acc_auth(account,password):
             if account_data['password']==password:
                 exp_time_stamp=time.mktime(time.strptime(account_data['expire_date'],"%Y-%m-%d"))
                 if time.time() > exp_time_stamp:
-                    print("\033[31;1m用户不存在\033[0m")
+                    print("\033[31;1m用户已经过期\033[0m")
                 else:
                     return account_data
     else:

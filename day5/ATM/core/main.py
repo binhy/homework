@@ -6,7 +6,7 @@ from core import auth
 from core import db_handler
 from core import logger
 from core import transaction
-import time
+import time,sys
 
 trans_logger=logger.logger('transaction')
 access_logger=logger.logger('access')
@@ -36,7 +36,7 @@ def repay(acc_data):
     while back_flag:
         repay_amount=input("\033[33;1m请输入你还款的金额:\033[0m").strip()
         if len(repay_amount) > 0 and repay_amount.isdigit():
-            new_balance=transaction.make_transaction(trans_logger,account_data,'还款',repay_amount)
+            new_balance=transaction.make_transaction(trans_logger,account_data,'repay',repay_amount)
             if new_balance:
                 print('''\033[42;1m新的金额:%s\033[0m''' %(new_balance['balance']))
         else:
@@ -48,7 +48,7 @@ def repay(acc_data):
 
 
 
-#取款
+#提现
 def withraw(acc_data):
     account_data=accounts.load_current_balance(acc_data['account_id'])
     current_balance='''-----信用卡信息-----
@@ -57,16 +57,16 @@ def withraw(acc_data):
     print(current_balance)
     back_flag=True
     while back_flag:
-        withraw_amount=input("\033[33;1m请输入取款金额:\033[0m")
+        withraw_amount=input("\033[33;1m请输入提现金额:\033[0m")
         if len(withraw_amount) > 0 and withraw_amount.isdigit():
-            new_balance=transaction.make_transaction(trans_logger,account_data,'取款',withraw_amount)
+            new_balance=transaction.make_transaction(trans_logger,account_data,'withdraw',withraw_amount)
             if new_balance:
                 print('''\033[42;1mNew Balance:%s\033[0m''' %(new_balance['balance']))
         else:
-            print('\033[31;1m[%s] is not a valid amount, only accept integer!\033[0m' % withdraw_amount)
+            print('\033[31;1m[%s] is not a valid amount, only accept integer!\033[0m'%withraw_amount)
 
         if withraw_amount=='b':
-            back_flag=True
+            back_flag=False
 
 #转账
 def transfer(acc_data):
@@ -78,7 +78,7 @@ def pay_check(acc_data):
 
 #退出
 def logout(acc_data):
-    pass
+    sys.exit()
 
 
 def interactive(acc_data):
@@ -86,9 +86,10 @@ def interactive(acc_data):
     \033[32;1m------nimei bank-----
     1.账户信息
     2.还款
-    3.取款
+    3.取现
     4.转账
-    5.退出
+    5.账单
+    6.退出
 \033[0m
     '''
     menu_dic={

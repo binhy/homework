@@ -1,0 +1,21 @@
+2016-02-24 10:59:25,746 - transaction - INFO - 账户:123456,交易类型:repay,金额:2342342.0,利息:0.0
+2016-02-24 10:59:30,139 - transaction - INFO - 账户:123456,交易类型:repay,金额:123.0,利息:0.0
+2016-02-24 10:59:38,012 - transaction - INFO - 账户:123456,交易类型:withdraw,金额:12345.0,利息:617.25
+2016-02-24 11:01:40,322 - transaction - INFO - 账户:123456,交易类型:repay,金额:1234.0,利息:0.0
+2016-02-24 11:01:47,995 - transaction - INFO - 账户:123456,交易类型:withdraw,金额:12345.0,利息:617.25
+2016-02-24 11:01:50,683 - transaction - INFO - 账户:123456,交易类型:withdraw,金额:123456.0,利息:6172.8
+2016-02-24 11:02:02,065 - transaction - INFO - 账户:123456,交易类型:withdraw,金额:123456.0,利息:6172.8
+2016-02-24 11:02:25,493 - transaction - INFO - 账户:123456,交易类型:withdraw,金额:1234.0,利息:61.7
+2016-02-24 11:02:31,234 - transaction - INFO - 账户:123456,交易类型:withdraw,金额:1234.0,利息:61.7
+2016-02-24 11:03:32,738 - transaction - INFO - 账户:123456,交易类型:repay,金额:242.0,利息:0.0
+2016-02-24 11:03:39,818 - transaction - INFO - 账户:123456,交易类型:withdraw,金额:2134.0,利息:106.7
+2016-02-24 11:04:54,104 - transaction - INFO - 账户:123456,交易类型:repay,金额:23432.0,利息:0.0
+2016-02-24 11:05:00,205 - transaction - INFO - 账户:123456,交易类型:withdraw,金额:234234.0,利息:11711.7
+2016-02-25 19:22:35,725 - transaction - INFO - info hahah
+2016-02-25 19:22:35,761 - transaction - WARNING - warn hahah
+2016-02-25 19:22:35,761 - transaction - ERROR - error hahah
+2016-02-25 19:22:35,761 - transaction - CRITICAL - critical haha
+2016-02-25 19:22:43,247 - transaction - INFO - info hahah
+2016-02-25 19:22:43,247 - transaction - WARNING - warn hahah
+2016-02-25 19:22:43,247 - transaction - ERROR - error hahah
+2016-02-25 19:22:43,247 - transaction - CRITICAL - critical haha
