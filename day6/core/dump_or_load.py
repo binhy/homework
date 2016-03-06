@@ -84,5 +84,3 @@ def dump_we_acc(we_data):
 
     return True
 
-#a=load_all_role_name()
-#print(a)
