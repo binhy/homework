@@ -8,7 +8,7 @@ from modules.User import User
 from dbhelper import dbapi
 import time,json,os,shutil
 import socketserver
-import subprocess
+
 
 ftpserver_logger=logger.logger("server_ftp")
 
