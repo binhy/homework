@@ -7,11 +7,7 @@
 #################################################
 
 
-ftp小程序 README
-===============
-
-
-功能说明：
+一.功能说明：
 本程序是一个模拟 FTP 的应用，包括客户端和服务端，实现如下功能：
  1 可以实现多客户端连接, 服务端采用 SocketServer 模块实现，支持多客户端连接
  2 实现客户端登录验证,  对客户端登录时采用 sha224 加密算法进行加密,
@@ -28,7 +24,20 @@ ftp小程序 README
    rmd: 删除目录
 
 
- 目录介绍：
+二.运行说明:
+服务端启动ftp：python3 ftp_start.py start
+服务端管理ftp用户：python3 manage_user.py
+客户端连接ftp：python3 client_start.py -s 地址 -p 端口
+
+
+
+三.用到主要知识点
+1.模块：socket, socketserver, hashlib(md5,sha224),json,getpass,logging,shutil 等
+2.知识点： 多线程、函数、类、反射等
+
+
+
+四.目录介绍：
  client/
 ├── bin
 │   └── client_start.py  #主引导文件
@@ -36,6 +45,8 @@ ftp小程序 README
 │   ├── codes.py       #状态码文件
 │   ├── settings.py    #系统配置文件
 │   └── template.py    #模板文件
+├── download              #用户下载文件存放目录
+│   └── test.txt       #下载测试文件test.txt
 ├── logs                  #记录日志目录
 │   └── ftpclient.log  #记录日志文件
 └── modules               #模块目录
@@ -47,27 +58,27 @@ ftp小程序 README
 
 server/
 ├── bin
-│   ├── ftp_start.py
-│   └── manage_user.py
-├── conf
-│   ├── settings.py
-│   └── template.py
-├── database
-│   ├── sample.py
-│   └── User
-│       ├── test.json
-│       └── yaobin.json
-├── dbhelper
-│   ├── dbapi.py
-├── logs
-│   └── ftpserfer.log
-├── modules
-│   ├── common.py
-│   ├── logger.py
-│   ├── main.py
-│   ├── Manage_user.py
-│   ├── server.py
-│   └── User.py
-└── uploads
-    └── yaobin
+│   ├── ftp_start.py    #主程序ftp启动文件
+│   └── manage_user.py  #主程序ftp管理用户文件
+├── conf                   #配置目录
+│   ├── settings.py     #系统配置文件
+│   └── template.py     #模板文件
+├── database               #用户数据库目录
+│   ├── sample.py       #请忽略
+│   └── User            #User用户数据目录
+│       ├── test.json   #test用户数据文件
+│       └── yaobin.json  #yaobin用户数据文件
+├── dbhelper               #数据库操作接口目录
+│   ├── dbapi.py        #数据库操作接口文件
+├── logs                   #ftp-server端日志目录
+│   └── ftpserfer.log   #ftp-server端日志文件
+├── modules                #模块目录
+│   ├── common.py       #公共模块
+│   ├── logger.py       #日志定义文件
+│   ├── main.py         #main主程序入口
+│   ├── Manage_user.py  #管理用户文件
+│   ├── server.py       #服务端类文件，主要的逻辑都在这
+│   └── User.py         #服务端实例化用户类文件
+└── uploads                #上传目录
+    └── yaobin             #yaobin用户的家目录
 
