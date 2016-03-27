@@ -1,0 +1,4 @@
+2016-03-27 14:22:57,359 - server_ftp - INFO - client ('127.0.0.1', 49942) connected
+2016-03-27 15:02:08,615 - server_ftp - INFO - client ('127.0.0.1', 51292) connected
+2016-03-27 15:02:17,467 - server_ftp - INFO - remove file:D:\pycharm_project\s12\homework\day7\server\uploads\yaobin\c succ
+2016-03-27 15:02:23,642 - server_ftp - INFO - remove file:D:\pycharm_project\s12\homework\day7\server\uploads\yaobin\ziyoumen.exe succ
