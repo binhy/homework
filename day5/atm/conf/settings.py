@@ -21,8 +21,8 @@ DATABASE={
 LOG_LEVEL=logging.INFO  #日志水平
 #日志类型
 LOG_TYPES={
-    'transaction': 'transactions.log',
-    'access': 'access.log',
+    'transaction': 'transactions.logs',
+    'access': 'access.logs',
 }
 
 

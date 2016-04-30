@@ -21,7 +21,7 @@ FTP_SERVER_PORT='1234'
 #文件下载保存路径
 DOWNLOAD_FILE_PATH = os.path.join(BASE_DIR,"download")
 #日志文件存放路径
-LOGS_PATH=os.path.join(BASE_DIR,"logs/ftpclient.log")
+LOGS_PATH=os.path.join(BASE_DIR,"logs/ftpclient.logs")
 #日志水平
 LOG_LEVEL = logging.INFO
 

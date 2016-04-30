@@ -18,7 +18,7 @@ from conf import settings
 
 def logger(log_type):
 
-    #create log
+    #create logs
     logger = logging.getLogger(log_type)
     logger.setLevel(settings.LOG_LEVEL)
 
@@ -28,7 +28,7 @@ def logger(log_type):
     #ch.setLevel(settings.LOG_LEVEL)
 
     # create file handler and set level to warning
-    #log_file = "%s/log/%s" %(settings.BASE_DIR, settings.LOG_TYPES[log_type])
+    #log_file = "%s/logs/%s" %(settings.BASE_DIR, settings.LOG_TYPES[log_type])
     log_file =settings.LOGS_PATH
     fh = logging.FileHandler(log_file)
     fh.setLevel(settings.LOG_LEVEL)
@@ -39,17 +39,17 @@ def logger(log_type):
     #ch.setFormatter(formatter)
     fh.setFormatter(formatter)
 
-    # add ch and fh to log
+    # add ch and fh to logs
     #logger.addHandler(ch)
     logger.addHandler(fh)
 
     return logger
     # 'application' code
-    '''log.debug('debug message')
-    log.info('info message')
-    log.warn('warn message')
-    log.error('error message')
-    log.critical('critical message')'''
+    '''logs.debug('debug message')
+    logs.info('info message')
+    logs.warn('warn message')
+    logs.error('error message')
+    logs.critical('critical message')'''
 
 # test=logger('access')
 # test.error('hu eererror')

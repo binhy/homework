@@ -15,7 +15,7 @@ sys.path.append(BASE_DIR)
 FTP_SERVER_IP='127.0.0.1'
 FTP_SERVER_PORT=1235
 #日志文件存放路径
-LOGS_PATH=os.path.join(BASE_DIR,"logs/ftpserfer.log")
+LOGS_PATH=os.path.join(BASE_DIR,"logs/ftpserfer.logs")
 #日志水平
 LOG_LEVEL = logging.INFO
 #用户信息文件保存数据库路径
