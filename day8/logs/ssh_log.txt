@@ -162,3 +162,7 @@
 2016-04-30 22:16:56,381 - login_user - ERROR - error() missing 1 required positional argument: 'msg'
 2016-04-30 22:16:56,381 - login_user - ERROR - user:yaobin wrong password entered!
 2016-04-30 22:16:56,381 - login_user - ERROR - user:yaobin wrong password entered!
+2016-05-01 01:38:09,005 - login_user - ERROR - 'builtin_function_or_method' object has no attribute 'login_code'
+2016-05-01 01:38:09,005 - login_user - ERROR - 'builtin_function_or_method' object has no attribute 'login_code'
+2016-05-01 01:38:09,006 - login_user - ERROR - user:root is not exists!
+2016-05-01 01:38:09,006 - login_user - ERROR - user:root is not exists!

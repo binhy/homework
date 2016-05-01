@@ -11,7 +11,7 @@ from conf.code import login_code
 
 login_log=logger.logger("login_user","ssh_log.txt")
 
-def main():
+def Main():
     while True:
         print(template.WELCOME_MENU)
         username=common.input_msg("please input username:")
@@ -27,7 +27,7 @@ def main():
             trycount=0
             count = 3
             while trycount < count:  #尝试输错密码<3次
-                password=common.input_msg("please input password:")  #这里最后要换成getpass的，即是input_pass
+                password=common.input_pass("please input password:")  #这里最后要换成getpass的，即是input_pass
                 if not user_inst.user_auth(password): #认证密码错误
                     common.show_message(login_code["104"].format(username),"ERR")
                     login_log.error(login_code["104"].format(username))

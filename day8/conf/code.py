@@ -2,6 +2,7 @@
 #coding=utf-8
 __author__ = 'yaobin'
 
+
 login_code={
     "101":"The login user does not exist！",
     "102":"user:{0} is locked!!!",
@@ -19,6 +20,11 @@ exec_code={
     "200":"Do not have this option:{0}",
     "201":"The list parameter: {0} is not correct!!!",
     "202":"Without this group:{0}",
-    "203":"The cmd parameter: {0} is not correct!!!"
+    "203":"The cmd parameter: {0} is not correct!!!",
+    "204":"Without this hostname:{0}",
+    "205":"sftp parameter:{0} is not correct!!!",
+    "206":"Upload file:{0} does not exist!!!",
+    "207":"The download file directory:{0} does not exist"
 }
+
 

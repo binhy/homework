@@ -5,7 +5,7 @@ __author__ = 'yaobin'
 from conf import settings,code
 from modules import  common,logger
 from dbhelper import dbapi
-#from modules.myexception import MyException
+
 
 login_log=logger.logger("login_user","ssh_log.txt")
 
