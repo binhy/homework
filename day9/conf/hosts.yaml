@@ -1,0 +1,18 @@
+#192.168.2.128主机IP
+# -user 登录用户名
+# - auth_type:登录模式 1 用户名密码 2 密钥登录
+# - group: 服务器所属组
+# - port: 登录端口 默认22
+# - key：登录密码，若是密钥登录，则key为创建密钥时的密码
+192.168.2.128:
+  - user: 'root'
+  - auth_type: 2
+  - key: '12345'
+  - group: 'db_server'
+  - port: 22
+192.168.2.129:
+  - user: 'super'
+  - auth_type: 1
+  - key: 'super'
+  - group: 'web_server'
+  - port: 22

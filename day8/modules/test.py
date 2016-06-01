@@ -2,11 +2,15 @@
 #coding=utf-8
 __author__ = 'yaobin'
 
-import os
+import os,json
 
+class test(object):
+    pass
+
+a="dijfdsjfidsjfidsjfjdsfdjsf"
 # l=["a","b","c","d"]
 #
-# a=" ".join(l)
+# a=" ".joinw
 # print(a)
 
 # b=[['192.168.10.6', 'root', '22'], ['192.168.10.32', 'root', '22'], ['192.168.10.33', 'root', '22']]
@@ -39,3 +43,5 @@ import os
 # print(a)
 
 # print(os.path.("E:\test\yaobin.txt"))
+
+
