@@ -1,0 +1,19 @@
+web:
+  bind_hosts:
+    - web7
+    - web2
+    - web3
+  user_profiles:
+    - yaobin
+
+
+LB:
+  bind_hosts:
+    - LB1
+    - LB2
+  user_profiles:
+    - luochen
+
+
+
+

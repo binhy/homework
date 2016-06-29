@@ -1,0 +1,19 @@
+web7:
+  ip_addr:  192.168.10.6
+  port: 22
+
+web2:
+  ip_addr:  192.168.10.32
+  port: 22
+
+web3:
+  ip_addr:  192.168.10.33
+  port: 22
+
+LB1:
+  ip_addr:  192.168.10.3
+  port: 22
+
+LB2:
+  ip_addr:  192.168.10.4
+  port: 22

@@ -1,0 +1,21 @@
+yaobin:
+  password: Gemall2016
+  groups:
+    - web
+    - LB
+  bind_hosts:
+    - web7
+    - web2
+    - web3
+    - LB1
+    - LB2
+
+
+
+luochen:
+  password: luochen123
+  groups:
+    - LB
+  bind_hosts:
+    - LB1
+    - LB2

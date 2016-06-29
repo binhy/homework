@@ -1,0 +1,27 @@
+bind1:
+  hostname: web2
+  remote_users:
+    - user1:
+      username: root
+      auth_type:  ssh-passwd
+      password: 123456
+  groups:
+    - web
+    - LB
+
+
+bind2:
+  hostname: LB2
+  remote_users:
+    - user1:
+      username: root
+      auth_type:  ssh-key
+
+    - user2:
+      username: OPS_yaobin
+      auth_type:  ssh-passwd
+      password: abc123456
+  groups:
+    - LB
+
+
