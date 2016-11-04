@@ -1,0 +1,28 @@
+/* 样式重置 盖网 */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend{margin:0;padding:0;border:0;outline:0;font-size:100%;background:transparent}
+table,caption,tbody,tfoot,thead,tr,th{margin:0;padding:0;border:0;outline:0;font-size:100%;}
+body{ line-height:1.5;}
+ol,ul,li{list-style:none}
+blockquote,q{quotes:none}
+blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outline:0}
+ins{text-decoration:none}
+del{text-decoration:line-through}
+table{border-collapse:collapse;border-spacing:0;}
+a{cursor:pointer;}
+/* 单独的清除元素*/
+.clear {clear: both;display: block;overflow: hidden;visibility: hidden;width: 0;height: 0;}
+
+/* 当一个外部元素内部有浮动元素时，外部元素如需清除浮动，用如下的清除样式 */
+.clearfix:after {clear: both; content: '.';display: block;visibility: hidden;height: 0;}
+.clearfix {display: inline-block;}
+* html .clearfix {height: 1%;}
+.clearfix {display: block;}
+*+html .clearfix{min-height:1%;}
+
+
+
+/*全站统一头部*/
+.top-advert{width:100%;min-width:1200px;height:70px;position: relative;}
+.clear-top-advert{width:100%;position: absolute;top:0px;left:0px;height: 70px;}
+.clear-top-advert span{display:block;float:right;margin-top:-32px;background:url(../image/index_ioc.png) no-repeat 0 -226px;width:18px;height:18px;cursor: pointer;}
+.gx-top-title{width: 100%;min-width: 1200px;height: 33px;border-bottom: 1px #e5e5e5 solid;background:#f1f1f1;line-height: 33px;}
