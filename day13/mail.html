@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>yaobin day13 homework</title>
+    <link type="text/css" rel="stylesheet" href="css/c1.css">
+    <link type="text/css" rel="stylesheet" href="css/c2.css">
+</head>
+
+
+<body id="nv_main">
+<div class="topbg">
+    <div class="top">
+        <div class="toplink">
+            <div class="welcome">欢迎!</div>
+            <div class="member">你好 耀斌</div>
+        </div>
+
+        <div class="logo">
+            <div style="float: left;"><h1>python12</h1></div>
+
+            <div class="navr">
+                <ul>
+                    <li style="width: 85px;"></li>
+                    <li><a href="#">1111</a></li>
+                    <li><a href="#">2222</a></li>
+                    <li><a href="#">3333</a></li>
+                    <li><a href="#">4444</a></li>
+                    <li class="menuon"><a href="#">JQUERY</a></li>
+                    <li><a href="#">5555</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="wp">
+    <div class="contentmanage">
+        <div class="developer">
+
+            <div class="normalTitle">
+                <h2>学习文档</h2>
+                <div class="kong"></div>
+                <div class="clr"></div>
+            </div><!-- end normalTitle -->
+
+
+
+            <!-- 下面的表格框 -->
+            <div class="tablecontent">
+                <!-- left menu -->
+                <div class="sideBar">
+                    <div class="catalogList">
+                        <ul class="newskin">
+                            <li class="subCatalogList">
+                                <div class="menu subCatalogList">Day13</div>
+                                <div class="menu-body">
+                                    <p class="sub-menu"><a href="#" id="menu-1-1">效果展示</a></p>
+                                    <p class="sub-menu"><a href="#" id="menu-1-2">README</a></p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!--end left menu-->
+
+
+
+
+                <div class="content" style="display: block;">
+                    <div class="test">
+
+
+
+                        <!-- 右边表格开始 -->
+                    <div>
+                        <div style="border-bottom: 2px solid #44b549; font-family: '微软雅黑 Light' "><p>以下为展示弹出对话框修改数据效果</p></div>
+                    </div>
+
+
+                    <div id="show_table" style="padding-top: 30px;">
+                        <div style="text-align: right" class="edit_menu">
+                             <!--定义异常提示消息框 -->
+                            <span id="err-msg"></span>
+
+                            <input type="button" class="composebtn" disabled>
+                            <a id="a-edit" href="#" onclick="editAllTr();">进入编辑模式</a>
+                            <input type="button" class="savebtn" disabled>
+                            <a id="a-save" href="#" onclick="saveAllTr()">保存修改</a>
+                        </div>
+
+
+                        <table class="demo-table" style="left: 1200px; width: 100%">
+                            <tr>
+                                <th width="5%">
+                                    <input type="checkbox" id="checkall" title="全选/取消全选" onclick="selectAll();">
+                                </th>
+                                <th width="10%">序号</th>
+                                <th width="10%">主机</th>
+                                <th width="10%">ip地址</th>
+                                <th width="10%">cpu</th>
+                                <th width="10%">磁盘</th>
+                                <th width="10%">内存</th>
+                                <th width="10%">所属组</th>
+                                <th width="10%">状态</th>
+                                <th width="10%">操作</th>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <input type="checkbox" class="chk_id" value="1" onclick="chkChoose(this);">
+                                </td>
+
+                                <td>1</td>
+                                <td edit="1" col="host">machine002</td>
+                                <td edit="1" col="ip">192.168.1.2</td>
+                                <td edit="1" col="cpu">2C * 1.8</td>
+                                <td edit="1" col="disk">501GB</td>
+                                <td edit="1" col="mem">8G</td>
+                                <td edit="1" col="group" isselect="1">开发组</td>
+                                <td edit="1" col="stat" isselect="1">在线</td>
+                                <td><a class="op_edit" onclick="editCurrTr(this);" href="#">[编辑]</a></td>
+                            </tr>
+                                                        <tr>
+                                <td>
+                                    <input type="checkbox" class="chk_id" value="2" onclick="chkChoose(this);">
+                                </td>
+
+                                <td>1</td>
+                                <td edit="1" col="host">machine003</td>
+                                <td edit="1" col="ip">192.168.1.3</td>
+                                <td edit="1" col="cpu">2C * 1.8</td>
+                                <td edit="1" col="disk">503GB</td>
+                                <td edit="1" col="mem">8G</td>
+                                <td edit="1" col="group" isselect="1">开发组</td>
+                                <td edit="1" col="stat" isselect="1">离线</td>
+                                <td><a class="op_edit" onclick="editCurrTr(this);" href="#">[编辑]</a></td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <input type="checkbox" class="chk_id" value="3" onclick="chkChoose(this);">
+                                </td>
+
+                                <td>1</td>
+                                <td edit="1" col="host">machine004</td>
+                                <td edit="1" col="ip">192.168.1.4</td>
+                                <td edit="1" col="cpu">2C * 1.8</td>
+                                <td edit="1" col="disk">504GB</td>
+                                <td edit="1" col="mem">8G</td>
+                                <td edit="1" col="group" isselect="1">运维组</td>
+                                <td edit="1" col="stat" isselect="1">在线</td>
+                                <td><a class="op_edit" onclick="editCurrTr(this);" href="#">[编辑]</a></td>
+                            </tr>
+                                                        <tr>
+                                <td>
+                                    <input type="checkbox" class="chk_id" value="4" onclick="chkChoose(this);">
+                                </td>
+
+                                <td>1</td>
+                                <td edit="1" col="host">machine005</td>
+                                <td edit="1" col="ip">192.168.1.5</td>
+                                <td edit="1" col="cpu">2C * 1.8</td>
+                                <td edit="1" col="disk">505GB</td>
+                                <td edit="1" col="mem">8G</td>
+                                <td edit="1" col="group" isselect="1">开发组</td>
+                                <td edit="1" col="stat" isselect="1">离线</td>
+                                <td><a class="op_edit" onclick="editCurrTr(this);" href="#">[编辑]</a></td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <input type="checkbox" class="chk_id" value="5" onclick="chkChoose(this);">
+                                </td>
+
+                                <td>1</td>
+                                <td edit="1" col="host">machine006</td>
+                                <td edit="1" col="ip">192.168.1.6</td>
+                                <td edit="1" col="cpu">2C * 1.8</td>
+                                <td edit="1" col="disk">506GB</td>
+                                <td edit="1" col="mem">18G</td>
+                                <td edit="1" col="group" isselect="1">开发组</td>
+                                <td edit="1" col="stat" isselect="1">在线</td>
+                                <td><a class="op_edit" onclick="editCurrTr(this);" href="#">[编辑]</a></td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <input type="checkbox" class="chk_id" value="6" onclick="chkChoose(this);">
+                                </td>
+
+                                <td>1</td>
+                                <td edit="1" col="host">machine001</td>
+                                <td edit="1" col="ip">192.168.1.1</td>
+                                <td edit="1" col="cpu">2C * 1.8</td>
+                                <td edit="1" col="disk">500GB</td>
+                                <td edit="1" col="mem">8G</td>
+                                <td edit="1" col="group" isselect="1">运维组</td>
+                                <td edit="1" col="stat" isselect="1">在线</td>
+                                <td><a class="op_edit" onclick="editCurrTr(this);" href="#">[编辑]</a></td>
+                            </tr>
+
+
+                        </table>
+                        <div id="editstatus" style="display:none" status=false></div>
+
+
+                    </div>
+                        <!-- 弹出遮罩层 -->
+                    <div id="show_bg"></div>
+                    <div class="show" >
+                        <p class="title">【 编辑主机信息 】</p>
+                        <table class="edit-table2">
+                            <tr><td>主机名称： </td><td><input type="text"  id="host"></td></tr>
+                            <tr><td>IP 地址： </td><td><input type="text"  id="ip"></td></tr>
+                            <tr><td>CPU   ： </td><td><input type="text"  id="cpu"></td></tr>
+                            <tr><td>磁盘   ： </td><td><input type="text"  id="disk"></td></tr>
+                            <tr><td>内存  ：</td><td><input type="text"  id="mem"></td></tr>
+                            <tr><td>运维组  ：</td><td id="group"></td></tr>
+                            <tr><td>状态  ：</td><td id="stat"></td></tr>
+                        </table>
+                        <p class="buttom"></p>
+                        <p style="text-align:right; width:90%; padding-top:15px; ">
+                            <button id="btncancel" onclick="hideShow();">取消</button>
+                            <button value="提交" style=""  id="btnsummit" onclick="hideShow();">提交</button></p>
+                    </div>
+                    <!-- 右边表格完成-->
+					</div>
+
+                </div>
+                <!-- end right -->
+
+
+                <div class="readme" >
+                  <p>该页面为Day13作业，包括两个功能：</p>
+                  <p>1 点击单行[编辑]操作弹出一个遮罩的修改页面，提交后将遮罩页面关闭</p>
+                  <p>2 实现批量修改表格数据的效果,包括如下几个功能：</p>
+                  <div class="r1">
+                      <ul>
+                        <li>全选：     点击一个全选框将所有表格选中</li>
+                        <li>取消全选/反选： 对于已经选中的记录,点击一个全选框将取消选中</li>
+                        <li>批量修改：全选后点击“进入编辑模式" 所有数据进入编辑模式，自由编辑。</li>
+                        <li>单个修改：进入编辑模式后,单独选中一个记录将自动进入编辑模式</li>
+                        <li>自动保存：进入编辑模式后，取消选中一条记录将自动保存该记录</li>
+                        <li>状态判断：进入编辑模式后，如果取消了所有记录将自动将全选框清除，并自动修改编辑为视图模式</li>
+                      </ul>
+                  </div>
+              </div>
+
+
+            </div>
+
+
+
+
+            </div>
+        </div> <!-- end developer -->
+    </div> <!-- end contentmanage -->
+</div> <!-- end wp -->
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

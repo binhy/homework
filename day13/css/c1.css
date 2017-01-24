@@ -1,0 +1,125 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	padding:0;
+	margin:0;
+	border:none;
+}
+a{
+	text-decoration:none;
+}
+body{
+	font: 12px/1.5 Microsoft YaHei,Helvitica,Verdana,Arial,san-serif;
+	font-size:12px;
+    background: #FFF url(images/bg_home.png) repeat;
+}
+.topbg{
+	background:url(images/top.gif) repeat-x;
+	height:101px;
+}
+.top {
+    margin: 0px auto;
+    width: 1200px;
+    height: 101px;
+}
+
+.top .toplink{ height:30px; line-height:27px; color:#FC0; font-size:14px;}
+.top .toplink .welcome{ float:left;}
+.top .toplink .memberinfo{ float:right;}
+.top .toplink .memberinfo a{ color:#fff;}
+.top .toplink .memberinfo a:hover{ color:#F90}
+.top .toplink .memberinfo a.green{ background:none; color:#fff}
+
+.top .logo {
+    width: 990px;
+    color: #333;
+    height: 70px;
+    font-size: 16px;
+}
+
+.top h1{ font-size:25px;float:left; width:230px;
+    padding:0;
+    margin: 6px 0 0;
+}
+
+.top .navr {WIDTH:750px; float:right; overflow:hidden;}
+.top .navr ul {width: 850px;}
+ul, li {list-style-type: none;padding: 0;margin: 0;}
+
+
+.navr li {text-align:center; float: left; height:70px; font-size:1em; width:103px; margin-right:5px;}
+.navr li a {width:103px; line-height:70px; float: left; height:100%; color: #333; font-size: 1em; text-decoration:none;}
+.navr li a:hover { background:#ebf3e4;}
+.navr li.menuon {background:#ebf3e4; display:block; width:103px;}
+.navr li.menuon a{color:#333;}
+.navr li.menuon a:hover{color:#333;}
+
+#nv_main .wp { width: 100%;	margin: 0 auto;}
+.contentmanage {
+    margin: 0 auto;
+    text-align: left;
+    width: 1210px;
+}
+.developer{
+	margin:40px 40px;
+	border:1px solid #BBC2CC;
+	background:#FFFFFF;
+	box-shadow:0 1px 3px #ccc;
+}
+.normalTitle {
+    border-bottom: 1px solid #B2B7BE;
+    background: #f4f5f9 url(images/btn_tit.gif) no-repeat 18px 21px ;
+    padding: 20px 0 20px 75px;
+    color: #44b549;
+    text-shadow: 0 1px 1px #fff;
+}
+
+.normalTitle h2{font: bold; font-size:20px; float:left;}
+.kong{float: none;
+    margin: 0;
+}
+.clr{display: block; clear: both; height: 1px;overflow: hidden;}
+.sideBar{border-right: 1px solid #D3D3D3;float: left; padding: 0 0 10px 0; width: 175px;}
+.catalogList{background:#ffffff; height:500px;}
+ul, li {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+	font-size:14px;
+}
+.sideBar .catalogList ul li {
+    float: left;
+    position: relative;
+    text-align: left;
+    width: 100%;
+    text-indent: 28px;
+}
+.newskin li.subCatalogList {
+    height: 40px;
+    line-height: 40px !important;
+    text-indent: 48px !important;
+}
+
+.tablecontent .content {
+    border-left: 1px solid #D3D3D3;
+    width: 951px;
+    background-color: #FFFFFF;
+    min-height: 600px;
+	padding-left: 176px;
+}
+.test p{text-indent: 2em;}
+.test{
+	padding-left: 10px;
+	padding-top: 10px;
+	padding-right:30px;
+	height:550px;
+	font-size:13px;
+	line-height:25px;
+}
+
+
+/*定义左侧菜单效果*/
+.menu{background: #44b549; border-bottom: 1px solid #ebf3e4;}
+.menu:hover{cursor:pointer;}
+.menu .menu-body .sub-menu a:hover{background: #b6dbf7; cursor: pointer; color: #E72551;}
+

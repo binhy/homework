@@ -1,0 +1,35 @@
+table{width:600px; border-collapse: collapse;}
+table td{border: 1px solid  #44b549; height:22px; text-align:center; font-family: '微软雅黑';
+    font-size: 10px; vertical-align: middle;}
+table th{}
+table th{background: #b6dbf7;border:1px solid #66CCCC; text-align:center;font-family: '微软雅黑' ;font-size: 12px; height: 25px;}
+.demo-table tr:hover{background:#FFC}
+/*.tr_hover{background: #FF9999;}*/
+/*遮罩图像*/
+#show_bg{background: #3e4b54; opacity: 0.4;display:none;top:0;left:0;width:100%;height:100%;
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);z-index:12;position:absolute;}
+.show {z-index:15; position: absolute;left:0; top: 0;
+    background: #FFFFFF;width:390px; height:280px;
+    border:1px solid #44b549;display: none; border-radius:2%;}
+.show p{padding-left: 20px; line-height: 30px;}
+.show .title{border-bottom: 1px solid indianred; text-align: left; padding-left:5px;}
+.show .buttom{border-bottom: 1px solid indianred; text-align: left; padding-top:5px;}
+.show input{width:200px;border:1px solid #B2B7BE; height: 20px;}
+.show button{width:69px; height:25px; border-radius:10%;font-family:'微软雅黑';}
+.show #btnsummit{background:#44b549;}
+.show #btnsummit:hover{cursor:pointer; background:#69F}
+.show #btncancel:hover{cursor:pointer;}
+.show p label{width:60px; text-align:right;}
+.composebtn{background: url(image/mail2757b6.png) 0 -1px no-repeat; width:25px;height:15px; border:0;}
+.savebtn{background: url(image/mail2757b6.png) 0 -34px no-repeat; width:25px;height:15px; border:0;}
+.edit-input{width:80px; height: 20px; border: 1px solid lightskyblue ;}
+.show .edit-table2 {border-color:#ffffff; margin: 0 auto; width:345px; padding-top:252px;}
+.show .edit-table2 input{border:1px solid #6CC; border-radius:1% }
+.show .edit-table2 tr td{text-align: left; boder-color:#ffffff;border: 1px solid #FFF}
+
+#err-msg{text-align:left; float:left; width:300px; background:#f2dede; border:1px solid transparent;
+    border-radius:4px;color:#2b669a;display: none;}
+.readme{display: none;height: 500px; line-height: 30px;}
+.readme p{font-size: 14px; text-indent: 5em;}
+.readme .r1{margin-left: 270px; color: #44b549; }
